@@ -6,6 +6,10 @@ SampleApp2::Application.routes.draw do
   resources :users
   match '/signup', to: 'users#new'
 
+  resources :sessions
+  match '/signout', to: 'sessions#destroy'
+  match '/signin', to: 'sessions#new'
+
   root to: 'pages#home'
 
   # The priority is based upon order of creation:
