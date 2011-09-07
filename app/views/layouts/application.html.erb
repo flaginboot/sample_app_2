@@ -14,10 +14,8 @@
       <%= render 'layouts/header' %>
 
       <section class="round">
-        <% if flash %>
-          <% flash.each do |type, msg| %>
-            <%= content_tag(:div, msg, class: type) %>
-          <% end %>
+        <% flash.each do |type, msg| %>
+          <%= content_tag(:div, msg, class: ['flash', type]) %>
         <% end %>
         <%= yield %>
       </section>
