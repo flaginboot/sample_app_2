@@ -1,0 +1,10 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+travis:
+  name: Travis Wetmore
+  email: traviswetmore@gmail.com
+
+travis_duped:
+  name: Bob
+#  email: traviswetmore@gmail.com
+

@@ -3,7 +3,7 @@ SampleApp2::Application.routes.draw do
   match '/about', to: 'pages#about'
   match '/help', to: 'pages#help'
 
-  get 'users/new'
+  resources :users
   match '/signup', to: 'users#new'
 
   root to: 'pages#home'
