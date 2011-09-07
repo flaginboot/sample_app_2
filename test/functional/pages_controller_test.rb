@@ -6,9 +6,33 @@ class PagesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+  test 'home should have the right title' do
+    get :home
+    assert_tag :title, content: "Ruby on Rails Tutorial Sample App | Home"
+  end
+
+
+
   test "should get contact" do
     get :contact
     assert_response :success
   end
 
+  test 'contact should have the right title' do
+    get :contact
+    assert_tag :title, content: "Ruby on Rails Tutorial Sample App | Contact"
+  end
+
+
+
+  test 'should get about' do
+    get :about
+    assert_response :success
+  end
+
+  test 'about should have the right title' do
+    get :about
+    assert_tag :title, content: "Ruby on Rails Tutorial Sample App | About"
+  end
 end
+
